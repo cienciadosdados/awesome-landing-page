@@ -4,9 +4,9 @@
     "description": "beautiful landing pages",
     "main": "index.js",
     "scripts": {
-      "start:tailwind": "cross-env NODE_ENV=development tailwindcss -i tailwind.css -o css/tailwind-runtime.css -w",
-      "build:tailwind": "cross-env NODE_ENV=production tailwindcss -i tailwind.css -o css/tailwind-build.css --minify",
-      "build": "npm run build:tailwind",
+      "start:tailwind": "cross-env NODE_ENV=development tailwindcss -i public/tailwind.css -o public/css/tailwind-runtime.css -w",
+      "build:tailwind": "cross-env NODE_ENV=production tailwindcss -i public/tailwind.css -o public/css/tailwind-build.css --minify",
+      "build": "npm run build:tailwind && cp -r public/* .",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
