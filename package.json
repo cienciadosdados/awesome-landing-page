@@ -6,7 +6,7 @@
     "scripts": {
       "start:tailwind": "cross-env NODE_ENV=development tailwindcss -i tailwind.css -o css/tailwind-runtime.css -w",
       "build:tailwind": "cross-env NODE_ENV=production tailwindcss -i tailwind.css -o css/tailwind-build.css --minify",
-      "build": "npm install && npm run build:tailwind",
+      "build": "npm run build:tailwind",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
@@ -20,10 +20,12 @@
     "license": "MIT",
     "devDependencies": {
       "tailwindcss": "^3.4.1",
-      "cross-env": "^7.0.3"
+      "cross-env": "^7.0.3",
+      "autoprefixer": "^10.4.16"
     },
     "dependencies": {
       "postcss": "^8.4.33",
+      "postcss-cli": "^11.0.0",
       "postcss-simple-vars": "^7.0.1"
     }
   }

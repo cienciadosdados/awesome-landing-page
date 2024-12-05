@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-black;
+  }
+  
+  .header-links {
+    @apply tw-text-gray-300 hover:tw-text-white;
+  }
+}
